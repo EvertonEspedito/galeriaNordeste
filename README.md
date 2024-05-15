@@ -7,7 +7,7 @@
 **Práticar Habilidades com Desenvolvimento Web, e Mostrar grandes nomes do nordeste.**
 **Utilizei Apenas HTML,CSS e JS**
 
-[![Site](https://img.shields.io/badge/site-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://evertonespdev.netlify.app/)
+[![Site](https://img.shields.io/badge/site-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://galerianordeste.netlify.app/)
 
 ## Autores
 
