@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+ul{
+    list-style: none;
+}
+
+/**Estilos**/
+
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+main::after{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 80vw;
+    background: linear-gradient(-243deg, #000 30%, rgba(0,0,0,0)) no-repeat;
+}
+
+main .jogador{
+    display: none;
+    height: 100vh;
+}
+
+main .jogador.selecionado{
+    display: block;
+}
+
+main .jogador .img-jogador{
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+main .jogador .conteudo{
+
+    position: absolute;
+    top: 0;
+    left: 120px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 580px;
+}
+
+main .jogador .conteudo img{
+    max-width: 17%;
+    max-height: 8%;
+    cursor: pointer;
+}
+
+main .jogador .conteudo .nome{
+    font-family: 'Secular One', sans-serif;
+    color: white;
+    font-size: 48px;
+    font-weight: 400;
+    margin: 1% 0 2% 0;
+}
+
+main .jogador .conteudo p{
+    font-family: 'Rubik', sans-serif;
+    line-height: 24px;
+    color: white;
+    max-width: 100%;
+}
+
+ul.btns{
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 20vw;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+ul.btns .btn{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+ul.btns .btn.selecionado{
+    border-radius: 50%;
+    img{
+        transform: rotate(-0.15turn);
+        width: 4.5rem;
+        height: 4.5rem;
+        object-fit: cover;
+        box-shadow: 0 0 10px #d9d9d9;
+    }
+}
+
+ul.btns .btn img{
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+}
+
+ul.btns .btn img:hover{
+    transition: 0.5s;
+    transform: rotate(-0.15turn);
+    width: 4.5rem;
+    height: 4.5rem;
+    object-fit: cover;
+}
